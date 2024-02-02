@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Table</title>
+  <style>
+    /* Add custom style for the table */
+    .custom-table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .custom-table th, .custom-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    h1, h2{
+      text-align: center;
+    }
+    .col{
+      text-align: center;
+    }
+    body{
+      background-color: beige;
+    }
+    table {
+      border: 2px solid #333; /* Dark color, you can change this to any color code */
+      border-collapse: collapse;
+    }
+    th, td, tr, .col {
+      border: 2px solid #333; /* Dark color, you can change this to any color code */
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>PUDUCHERRY MUNICIPALITY</h1>
+    <h2>WARD DETAILS</h2>
+  <div class="container">
+    <table class="table table-bordered ">
+      <thead>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- Column 1: Animator Information -->
+          <td>
+            <label for="animatorName">Animator Name</label>
+            <input type="text" class="form-control" id="animatorName" placeholder="Enter Animator Name">
+            
+            <label for="wardNo">Ward No</label>
+            <input type="number" class="form-control" id="wardNo" placeholder="Enter Ward No">
+            
+            <label for="wardName">Ward Name</label>
+            <input type="text" class="form-control" id="wardName" placeholder="Enter Ward Name">
+            
+            <label for="streetName">Street Name</label>
+            <input type="text" class="form-control" id="streetName" placeholder="Enter Street Name">
+            
+            <label for="appartmentName">Apartment Name</label>
+            <input type="text" class="form-control" id="appartmentName" placeholder="Enter Apartment Name">
+
+            <!-- Vehicle Details -->
+            <label for="pushcart">Pushcart</label>
+            <input type="text" class="form-control" id="pushcart" placeholder="Enter Pushcart details">
+            
+            <label for="tricycle">Tricycle</label>
+            <input type="text" class="form-control" id="tricycle" placeholder="Enter Tricycle details">
+            
+            <label for="lcv">LCV</label>
+            <input type="text" class="form-control" id="lcv" placeholder="Enter LCV details">
+            
+            <label for="hcv">HCV/407</label>
+            <input type="text" class="form-control" id="hcv" placeholder="Enter HCV/407 details">
+            
+            <label for="compactor">Compactor</label>
+            <input type="text" class="form-control" id="compactor" placeholder="Enter Compactor details">
+          </td>
+
+          <!-- Column 2: Supervisor and Sanitary Worker Information -->
+          <td>
+            <label for="siName">SI Name</label>
+            <input type="text" class="form-control" id="siName" placeholder="Enter SI Name">
+            
+            <label for="date">Date</label>
+            <input type="date" class="form-control" id="date" placeholder="Enter Date">
+            
+            <label for="supervisorName">Supervisor Name</label>
+            <input type="text" class="form-control" id="supervisorName" placeholder="Enter Supervisor Name">
+            
+            <!-- Sanitary Worker Information -->
+            <label for="sanitaryWorker1">Sanitary Worker Name</label>
+            <input type="text" class="form-control" id="sanitaryWorker1" placeholder="Enter Name">
+            
+            <label for="sanitaryWorker1Age">Age</label>
+            <input type="number" class="form-control" id="sanitaryWorker1Age" placeholder="Enter Age">
+            
+            <label for="sanitaryWorker2">Sanitary Worker Name</label>
+            <input type="text" class="form-control" id="sanitaryWorker2" placeholder="Enter Name">
+            
+            <label for="sanitaryWorker2Age">Age</label>
+            <input type="number" class="form-control" id="sanitaryWorker2Age" placeholder="Enter Age">
+            
+            <label for="sanitaryWorker3">Sanitary Worker Name</label>
+            <input type="text" class="form-control" id="sanitaryWorker3" placeholder="Enter Name">
+            
+            <label for="sanitaryWorker3Age">Age</label>
+            <input type="number" class="form-control" id="sanitaryWorker3Age" placeholder="Enter Age">
+            
+            <!-- Collection and Behavior Information -->
+            <label for="collection">Collection</label>
+            <select class="form-control" id="collection">
+              <option value="daily">Daily</option>
+              <option value="alternative">Alternative Days</option>
+              <option value="weekly">Weekly</option>
+              <option value="notComing">Not Coming</option>
+            </select>
+            
+            <label for="behaviorAspect">Behavioral Change Aspect</label>
+            <input type="number" class="form-control" id="behaviorAspect" placeholder="Mark out of 10">
+          </td>
+
+          <!-- Column 3: Road and Waste Information -->
+          <td>
+            <label for="drainageType">Drainage Type</label>
+            <select class="form-control" id="drainageType">
+              <option value="u">U</option>
+              <option value="l">L</option>
+              <option value="no">No</option>
+            </select>
+            
+            <label for="roadType">Road Type</label>
+            <select class="form-control" id="roadType">
+              <option value="tar">Tar</option>
+              <option value="sand">Sand</option>
+              <option value="cement">Cement</option>
+            </select>
+            
+            <label for="roadLength">Road Length (feet)</label>
+            <input type="number" class="form-control" id="roadLength" placeholder="Enter Length">
+            
+            <label for="roadWidth">Road Width (feet)</label>
+            <input type="number" class="form-control" id="roadWidth" placeholder="Enter Width">
+            
+            <label for="totalBins">Total Number of Bins</label>
+            <input type="number" class="form-control" id="totalBins" placeholder="Enter Total Bins">
+            
+            <label for="gvp">GVP</label>
+            <input type="text" class="form-control" id="gvp" placeholder="Enter GVP">
+            
+            <label for="totalHH">Total HH's</label>
+            <input type="text" class="form-control" id="totalHH" placeholder="Enter Total HH's">
+            
+            <label for="com">COM</label>
+            <input type="text" class="form-control" id="com" placeholder="Enter COM details">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="container-fluid">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th rowspan="2" class="col-1">S.No</th>
+          <th rowspan="2" class="col-1">DOOR NO.</th>
+          <th rowspan="2" class="col-2">RESIDENTIAL/COMMERCIAL</th>
+          <th rowspan="2" class="col-3">NAME/TRADE NAME</th>
+          <th rowspan="2" class="col-2">NO.OF MALE</th>
+          <th rowspan="2" class="col-4">NO.OF FEMALE</th>
+          <th rowspan="2" class="col-1">NO.OF CHILDREN</th>
+          <th rowspan="2" class="col-1">T.N.OF PERSON</th>
+          <th rowspan="2" class="col-1">PHONE NUMBER</th>
+          <th rowspan="2" class="col-1">TYPE OF HOUSE(Pucca, Kutcha, Hut)</th>
+          <th rowspan="2" class="col-1">RENTAL(or)OWN</th>
+          <th colspan="4" class="col-1">TRASH DISPOSING METHOD</th>
+          <th rowspan="2" class="col-2">PUBLIC BEHAVIOURL CHANGE LEVEL</th>
+          <th rowspan="2" class="col-1">HOME GARDENING</th>
+          <th rowspan="2" class="col-1">GVP</th>
+          <th rowspan="2" class="col-1">BIN</th>
+          <th rowspan="2" class="col-1">VACANT LAND</th>
+        </tr>
+        <tr>
+          <th class="col-1">DOOR TO DOOR</th>
+          <th class="col-1">NO</th>
+          <th class="col-1">BIN</th>
+          <th class="col-1">VACANT</th>
+
+        </tr>
+        <!-- ... previous code ... -->
+
+<tbody>
+  <tr>
+    <td><input type="number" name="sNo" /></td>
+    <td><input type="number" name="doorNo" /></td>
+    <td><input type="text" name="residentialCommercial" /></td>
+    <td><input type="text" name="nameTradeName" /></td>
+    <td><input type="number" name="noOfMale" /></td>
+    <td><input type="number" name="noOfFemale" /></td>
+    <td><input type="number" name="noOfChildren" /></td>
+    <td><input type="number" name="totalNoOfPerson" /></td>
+    <td><input type="number" name="phoneNumber" /></td>
+    <td><input type="text" name="typeOfHouse" /></td>
+    <td><input type="text" name="rentalOwn" /></td>
+    <td><input type="text" name="trashDisposingDoorToDoor" /></td>
+    <td><input type="text" name="trashDisposingNo" /></td>
+    <td><input type="text" name="trashDisposingBin" /></td>
+    <td><input type="text" name="trashDisposingVacant" /></td>
+    <td><input type="text" name="publicBehaviouralChangeLevel" /></td>
+    <td><input type="text" name="homeGardening" /></td>
+    <td><input type="text" name="GVP" /></td>
+    <td><input type="text" name="BIN" /></td>
+    <td><input type="text" name="VACANT LAND" /></td>
+  </tr>
+  <!-- ... additional rows ... -->
+</tbody>
+<!-- ... previous code ... -->
+
+<tbody>
+  <tr>
+    <td><input type="number" name="sNo" /></td>
+    <td><input type="number" name="doorNo" /></td>
+    <td><input type="text" name="residentialCommercial" /></td>
+    <td><input type="text" name="nameTradeName" /></td>
+    <td><input type="number" name="noOfMale" /></td>
+    <td><input type="number" name="noOfFemale" /></td>
+    <td><input type="number" name="noOfChildren" /></td>
+    <td><input type="number" name="totalNoOfPerson" /></td>
+    <td><input type="number" name="phoneNumber" /></td>
+    <td><input type="text" name="typeOfHouse" /></td>
+    <td><input type="text" name="rentalOwn" /></td>
+    <td><input type="text" name="trashDisposingDoorToDoor" /></td>
+    <td><input type="text" name="trashDisposingNo" /></td>
+    <td><input type="text" name="trashDisposingBin" /></td>
+    <td><input type="text" name="trashDisposingVacant" /></td>
+    <td><input type="text" name="publicBehaviouralChangeLevel" /></td>
+    <td><input type="text" name="homeGardening" /></td>
+    <td><input type="text" name="GVP" /></td>
+    <td><input type="text" name="BIN" /></td>
+    <td><input type="text" name="VACANT LAND" /></td>
+  </tr>
+  <!-- ... additional rows ... -->
+</tbody>
+<!-- ... previous code ... -->
+
+<tbody>
+  <tr>
+    <td><input type="number" name="sNo" /></td>
+    <td><input type="number" name="doorNo" /></td>
+    <td><input type="text" name="residentialCommercial" /></td>
+    <td><input type="text" name="nameTradeName" /></td>
+    <td><input type="number" name="noOfMale" /></td>
+    <td><input type="number" name="noOfFemale" /></td>
+    <td><input type="number" name="noOfChildren" /></td>
+    <td><input type="number" name="totalNoOfPerson" /></td>
+    <td><input type="number" name="phoneNumber" /></td>
+    <td><input type="text" name="typeOfHouse" /></td>
+    <td><input type="text" name="rentalOwn" /></td>
+    <td><input type="text" name="trashDisposingDoorToDoor" /></td>
+    <td><input type="text" name="trashDisposingNo" /></td>
+    <td><input type="text" name="trashDisposingBin" /></td>
+    <td><input type="text" name="trashDisposingVacant" /></td>
+    <td><input type="text" name="publicBehaviouralChangeLevel" /></td>
+    <td><input type="text" name="homeGardening" /></td>
+    <td><input type="text" name="GVP" /></td>
+    <td><input type="text" name="BIN" /></td>
+    <td><input type="text" name="VACANT LAND" /></td>
+  </tr>
+  <!-- ... additional rows ... -->
+</tbody>
+<!-- ... previous code ... -->
+
+<tbody>
+  <tr>
+    <td><input type="number" name="sNo" /></td>
+    <td><input type="number" name="doorNo" /></td>
+    <td><input type="text" name="residentialCommercial" /></td>
+    <td><input type="text" name="nameTradeName" /></td>
+    <td><input type="number" name="noOfMale" /></td>
+    <td><input type="number" name="noOfFemale" /></td>
+    <td><input type="number" name="noOfChildren" /></td>
+    <td><input type="number" name="totalNoOfPerson" /></td>
+    <td><input type="number" name="phoneNumber" /></td>
+    <td><input type="text" name="typeOfHouse" /></td>
+    <td><input type="text" name="rentalOwn" /></td>
+    <td><input type="text" name="trashDisposingDoorToDoor" /></td>
+    <td><input type="text" name="trashDisposingNo" /></td>
+    <td><input type="text" name="trashDisposingBin" /></td>
+    <td><input type="text" name="trashDisposingVacant" /></td>
+    <td><input type="text" name="publicBehaviouralChangeLevel" /></td>
+    <td><input type="text" name="homeGardening" /></td>
+    <td><input type="text" name="GVP" /></td>
+    <td><input type="text" name="BIN" /></td>
+    <td><input type="text" name="VACANT LAND" /></td>
+  </tr>
+  <!-- ... additional rows ... -->
+</tbody>
+
+<!-- ... remaining code ... -->
+<!-- ... previous code ... -->
+
+<tbody>
+  <tr>
+    <td><input type="number" name="sNo" /></td>
+    <td><input type="number" name="doorNo" /></td>
+    <td><input type="text" name="residentialCommercial" /></td>
+    <td><input type="text" name="nameTradeName" /></td>
+    <td><input type="number" name="noOfMale" /></td>
+    <td><input type="number" name="noOfFemale" /></td>
+    <td><input type="number" name="noOfChildren" /></td>
+    <td><input type="number" name="totalNoOfPerson" /></td>
+    <td><input type="number" name="phoneNumber" /></td>
+    <td><input type="text" name="typeOfHouse" /></td>
+    <td><input type="text" name="rentalOwn" /></td>
+    <td><input type="text" name="trashDisposingDoorToDoor" /></td>
+    <td><input type="text" name="trashDisposingNo" /></td>
+    <td><input type="text" name="trashDisposingBin" /></td>
+    <td><input type="text" name="trashDisposingVacant" /></td>
+    <td><input type="text" name="publicBehaviouralChangeLevel" /></td>
+    <td><input type="text" name="homeGardening" /></td>
+    <td><input type="text" name="GVP" /></td>
+    <td><input type="text" name="BIN" /></td>
+    <td><input type="text" name="VACANT LAND" /></td>
+  </tr>
+  <!-- ... additional rows ... -->
+</tbody>
